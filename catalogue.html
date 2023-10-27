@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stenga - Catalogue</title>
+    <link rel="icon" href="logo.png" type="image/gif"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Catalogue Stenga</h1>
+    </header>
+    <nav>
+        <ul>
+            <input type="search" id="search" value="" onchange="ouvrirPage()">
+            <input type="button" id="button" onclick="ouvrirPage()" value="Chercher">
+        </ul>
+    </nav>
+    <main>
+        <h2> ONE PIECE</h2>
+        <a href="./one-piece.html" target="_self"><img src="./one-piece.jpg" alt="one piece"></a>
+        <h2> JUJUTSU KAISEN</h2>
+        <a href="./kaisen.html" target="_self"><img src="./jujutsukaisen.jpg" alt="Ao ashi"></a>
+        <h2> WAVE SURFING</h2>
+        <a href="./wave-surfing.html" target="_self"><img src="./wave-surfing.jpg" alt="Wave surfing"></a>
+        <h2> LEFT AND LAYUP</h2>
+        <a href="./left.html" target="_self"><img src="./left-hand-layup.jpg" alt="Left and layup"></a>
+        <h2> NUMBER 24</h2>
+        <a href="./try-knight.html" target="_self"><img src="./number24.jpg" alt="Number 24"></a>
+        <h2> DR STONE</h2>
+        <a href="./stone1.html" target="_self"><img src="./dr-stone.jpg" alt="Dr Stone"></a>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo.PNG" alt="Logo de Stenga">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/index.html">Accueil</a></li>
+                    <li><a href="http://127.0.0.1:5500/catalogue.html">Catalogue</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-info">
+            <p>&copy; 2023 Stenga - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script>
+        function ouvrirPage() {
+            var a = document.getElementById("search").value;
+
+            if (a === "stenga") {
+                window.location.href = "/index.html"
+            };
+
+            if (a === "one piece") {
+                window.location.href = "/one-piece.html"
+            };
+
+            if (a === "wave surfing") {
+                window.location.href = "/wave-surfing.html"
+            };
+
+            if (a === "left and layup") {
+                window.location.href = "/left.html"
+            };
+
+            if (a === "jujutsu kaisen") {
+                window.location.href = "/kaisen.html"
+            };
+
+            if (a === "number 24") {
+                window.location.href = "/number24.html"
+            };
+
+            if (a === "dr stone") {
+                    window.location.href = "/stone1.html"
+            }
+        }
+    </script>
+    <style>
+        header {
+            background-color: black;
+            padding: auto;
+            margin-top: auto;
+            height: 50px;
+        }
+
+        main {
+            background-color: black;
+            margin-top: auto;
+            padding: auto;
+            height: auto;
+        }
+
+        main h2 {
+            color: white;
+        }
+
+        /* Styles pour le footer */
+        footer {
+            background-color: wheat;
+            color: black;
+            padding: auto;
+            margin-top: auto;
+            margin-left: 0px;
+            margin-right: 0px;
+            text-align: center;
+            clear: both;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .footer-logo img {
+            width: 120px; /* Ajustez la largeur du logo selon vos besoins */
+            height: 100px;
+            margin-left: 50px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .footer-info p {
+            margin-top: 10px;
+            margin-left: 10px;
+            color: black;
+        }
+
+    </style>
+</body>
+</html>
